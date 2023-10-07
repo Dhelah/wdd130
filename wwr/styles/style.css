@@ -23,7 +23,7 @@ body {
     background-color: rgb(107, 135, 158);
 }
 header {
-    background-color: black;
+    background-color: rgb(50, 80, 90);
 }
 nav a:hover {
     background-color: white;
