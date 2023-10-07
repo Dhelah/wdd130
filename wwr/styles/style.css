@@ -20,7 +20,7 @@ main section {
     height: 725px;
 }
 body {
-    background-color: steelblue;
+    background-color: rgb(107, 135, 158);
 }
 header {
     background-color: black;
@@ -31,7 +31,7 @@ nav a:hover {
 }
 .book, .join {
     background-color: grey;
-    color: aquamarine;
+    color: rgb(101, 113, 109);
     text-decoration: none;
 }
 .book:hover, .join:hover {
@@ -45,21 +45,21 @@ nav a:hover {
     background-color: skyblue;
 }
 .msg h2 {
-    color: aqua;
+    color: rgb(16, 21, 21);
 }
 .msg p {
     color: black;
 }
 footer {
-    background-color: darkblue;
-    color: blueviolet;
+    background-color: rgb(99, 99, 230);
+    color: rgb(148, 88, 205);
 }
 footer a {
     color: azure;
     text-decoration: none;
 }
 footer a:hover {
-    color: seagreen;
+    color: rgb(98, 184, 199);
 }
 footer p {
     font-size: 1.2em;
