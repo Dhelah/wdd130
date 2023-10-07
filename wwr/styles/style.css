@@ -27,7 +27,7 @@ header {
 }
 nav a:hover {
     background-color: white;
-    color: black;
+    color: rgb(32, 31, 32);
 }
 .book, .join {
     background-color: grey;
@@ -39,7 +39,7 @@ nav a:hover {
     color: bisque;
 }
 #background {
-    background-color: aquamarine;
+    background-color: rgb(144, 159, 154);
 }
 .msg {
     background-color: skyblue;
@@ -52,7 +52,7 @@ nav a:hover {
 }
 footer {
     background-color: rgb(99, 99, 230);
-    color: rgb(148, 88, 205);
+    color: rgb(13, 10, 15);
 }
 footer a {
     color: azure;
