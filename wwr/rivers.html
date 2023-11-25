@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whitewater Rafting Vacations | Dry Oar Boating | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles_rivers.css">
+</head>
+<body>
+    
+</body>
+    <div id="content">
+        <header>
+            <a href="index.html" id="logo_link">
+                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="rivers.html">Rivers</a>
+                <a href="site-plan-rafting.html">Site Plan</a>
+                <a href="contactus.html">Contact</a>
+            </nav>
+        </header>
+        <div id="hero-rivers">
+            <section id="hero-msg">
+                <h1 class="home-title">Rivers</h1>
+                <h4>Let's check out our Amazing Rivers</h4>
+                <div class="button-box">
+                    <a class="book" href="contactus.html">Book Now</a>
+                </div> 
+            </section>
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1/2</div>
+                    <img src="./images/colorado.jpg" style="width: 100%" alt="Colorado River">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2/2</div>
+                    <img src="./images/antalya, turkey.jpg" style="width: 100%" alt="Antalya River">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="./images/colorado.jpg" style="width: 100%" onclick="currentSlide(1)" alt="Colorado River">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="./images/antalya, turkey.jpg" style="width: 100%" onclick="currentSlide(2)" alt="Antalya River">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+      </script>
+    </div>
+
+    <div class="space">
+      <h2>Learn More About Our Rivers.</h2>
+    </div>
+
+
+    <div class="middle-row">
+        <div class="container-overlay">
+            <img src="images/colorado.jpg" alt="Avatar" class="image-overlay">
+            <div class="overlay-overlay">
+                <div class="text-overlay">The Colorado River, originating in the Rocky Mountains, stretches approximately 1,450 miles through seven U.S. states, 
+                    shaping iconic canyons like the Grand Canyon along its course. </div>
+          </div>
+        </div>
+
+        <div class="container-overlay-text1">
+            <h2 class="middle-header">Colorado River.</h2>
+            <p class="middle-paragragh">The Colorado River, originating in the Rocky Mountains, stretches approximately 1,450 miles through seven U.S. states, 
+                shaping iconic canyons like the Grand Canyon along its course.Serving as a vital water source for agriculture and municipalities, the river 
+                is renowned for recreational activities such as white-water rafting. However, challenges related to water scarcity and environmental conservation 
+                underscore the complex management issues surrounding this critical waterway in the American West.</p>
+        </div>
+        
+        <div class="container-overlay">
+            <img src="images/antalya, turkey.jpg" alt="Avatar" class="image-overlay">
+            <div class="overlay-overlay">
+                <div class="text-overlay">Antalya, situated on Turkey's southwest coast, captivates visitors with its stunning Mediterranean beaches and a backdrop 
+                    of the Taurus Mountains.</div>
+            </div>
+        </div>
+
+        <div class="container-overlay-text2">
+            <h2 class="middle-header">Antalya River</h2>
+            <p class= "middle-paragragh">Antalya, situated on Turkey's southwest coast, captivates visitors with its stunning Mediterranean beaches and a backdrop 
+                of the Taurus Mountains. The city's rich historical heritage, featuring ancient sites like Hadrian's Gate and the well-preserved Termessos, adds 
+                cultural depth to its allure. As a prominent tourism hub, Antalya seamlessly blends natural beauty, historical charm, and modern amenities, making 
+                it a diverse and appealing destination on the Turkish Mediterranean coast.</p>
+        </div>
+    </div>
+
+    <section class="msg-river">
+        <h2>Embark on Your Next Adventure</h2>
+        <p>Embark on an adventure into the heart of nature's marvels with our memorable rafting experiences. Whether you crave the exhilaration of tackling challenging 
+            rapids or prefer a serene journey through picturesque landscapes, we offer the ideal expedition for you. Immerse yourself in an outdoor escape that seamlessly 
+            combines the thrill of excitement with the tranquility of nature.</p>
+        <a class='join' href="rivers.html">Book Your Adventure Today</a>   
+    </section>
+  
+    <footer>
+        <p>Dry Oar &copy; 2023 - Bright Agbemafle</p>
+        <p><a href="site-plan-rafting.html">Site Plan</a></p>
+        <p><a href="contactus.html">Contact Us</a></p>
+        <div class="social">
+          <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+          </a>
+          <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+          </a>
+          <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+          </a>
+        </div>
+    </footer>
+      
+</body>
+        
+
+</html>
